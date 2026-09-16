@@ -1,0 +1,3 @@
+export type EvidenceRecord = { id: string; example?: boolean; createdAt: string; agent: string; action: string; target: string; intent: Record<string, unknown>; observed: Record<string, unknown>; checks: { key: string; state: 'match' | 'difference' | 'missing'; intent?: string; observed?: string }[]; previousHash: string; recordHash: `0x${string}`; anchorTx?: `0x${string}` };
+export type WalletProvider = { request(args: { method: string; params?: unknown[] }): Promise<unknown>; on?(event: string, listener: (...args: unknown[]) => void): void; removeListener?(event: string, listener: (...args: unknown[]) => void): void };
+declare global { interface Window { ethereum?: WalletProvider } }

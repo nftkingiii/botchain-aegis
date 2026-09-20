@@ -1,6 +1,6 @@
 {
   "name":"aegis","version":"1.0.0","private":true,"type":"module","packageManager":"npm@11.6.2","engines":{"node":">=24.12.0"},
   "scripts":{"dev":"vite --host 0.0.0.0","build":"tsc -b && vite build","typecheck":"tsc -b --pretty false","start":"node server.mjs","test":"node --test test/server.test.mjs"},
-  "dependencies":{"@vitejs/plugin-react":"^4.3.4","lucide-react":"^0.468.0","react":"^18.3.1","react-dom":"^18.3.1","viem":"^2.21.54","vite":"^5.4.14"},
+  "dependencies":{"@vitejs/plugin-react":"^4.3.4","lucide-react":"^0.468.0","react":"^18.3.1","react-dom":"^18.3.1","viem":"^2.21.54","vite":"^8.3.0"},
   "devDependencies":{"@types/react":"^18.3.18","@types/react-dom":"^18.3.5","typescript":"^5.7.3"}
 }
